@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Roast Log: One Laptop, Zero Chill</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="cursor-dot" class="cursor-dot" aria-hidden="true"></div>
+<div id="particles" class="particles" aria-hidden="true"></div>
+
+<!-- ============ BOOT / WELCOME SCREEN ============ -->
+<section id="boot-screen" class="boot-screen">
+  <div class="boot-inner">
+    <p class="pill pill--warn">recovery_mode.exe has entered the chat</p>
+    <h1 class="boot-title"><span id="typewriter"></span><span class="caret">|</span></h1>
+    <p class="boot-sub">6 photos. 1 laptop. Several near-death experiences. Tap in and get roasted with it.</p>
+
+    <button id="enter-btn" class="btn btn--main" type="button">
+      <span class="btn-key">⏎</span>
+      <span>press enter to begin the roast</span>
+    </button>
+
+    <ul class="boot-options">
+      <li>Press Enter to try again <span class="tag">(worked last time)</span></li>
+      <li>Press F1 to enter Recovery Environment <span class="tag">(we've been)</span></li>
+      <li>Press F8 for Startup Settings <span class="tag">(don't)</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ MAIN LOG ============ -->
+<main id="app" class="app" hidden>
+
+  <header class="topbar">
+    <div class="meter" id="meter">
+      <div class="meter-track">
+        <span class="cap" data-index="0"></span>
+        <span class="cap" data-index="1"></span>
+        <span class="cap" data-index="2"></span>
+        <span class="cap" data-index="3"></span>
+        <span class="cap" data-index="4"></span>
+        <span class="cap" data-index="5"></span>
+        <span class="cap" data-index="6"></span>
+      </div>
+      <p class="meter-label" id="meter-label">mild</p>
+    </div>
+    <button id="mute-btn" class="icon-btn" type="button" aria-label="Mute music">🔊</button>
+  </header>
+
+  <div class="track" id="track">
+
+    <!-- PAGE 1 -->
+    <section class="page" data-index="0">
+      <div class="polaroid">
+        <img class="page-img" src="images/1.jpeg" alt="Laptop open on desk during an online class, with a countdown timer clipped beside it">
+        <span class="tape tape--left"></span>
+        <span class="tape tape--right"></span>
+      </div>
+      <div class="stickers">
+        <span class="sticker sticker--pink" style="top:12%; left:6%;">no cap</span>
+        <span class="sticker sticker--lime" style="top:70%; right:5%;">CTRL+S your progress</span>
+      </div>
+      <div class="page-copy">
+        <p class="log-tag">log 01 — 4:10 PM</p>
+        <h2>caught in 4K "multitasking"</h2>
+        <p>Physics Wallah open in one corner, a countdown timer judging every second in the other. Attendance: technically present.</p>
+        <button class="roast-btn" type="button" data-jokes="the timer's seen things. so has the periodic table poster.|that stopwatch has more focus than the laptop does.|&quot;cs wallah&quot; energy but make it physics.">🔥 roast it</button>
+        <p class="roast-output" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- PAGE 2 -->
+    <section class="page" data-index="1">
+      <div class="polaroid">
+        <img class="page-img" src="images/2.jpeg" alt="The internal parts of the laptop exposed, showing the battery, motherboard, RAM and cooling fan">
+        <span class="tape tape--left"></span>
+        <span class="tape tape--right"></span>
+      </div>
+      <div class="stickers">
+        <span class="sticker sticker--yellow" style="top:15%; right:8%;">hacker</span>
+        <span class="sticker sticker--pink" style="bottom:14%; left:6%;">future programmer</span>
+      </div>
+      <div class="page-copy">
+        <p class="log-tag">log 02 — panel off</p>
+        <h2>we go in dry, no manual</h2>
+        <p>Battery out, fan exposed, RAM sticks judging silently. 42Wh of pure commitment issues, held together by one strip of tape.</p>
+        <button class="roast-btn" type="button" data-jokes="the ribbon cable is one wrong move from becoming confetti.|this is surgery with the confidence of a youtube tutorial at 2x speed.|the fan has seen more drama than the motherboard.">🔥 roast it</button>
+        <p class="roast-output" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- PAGE 3 -->
+    <section class="page" data-index="2">
+      <div class="polaroid">
+        <img class="page-img" src="images/3.jpeg" alt="The internal hard disk removed and fitted into an external USB enclosure, held in hand">
+        <span class="tape tape--left"></span>
+        <span class="tape tape--right"></span>
+      </div>
+      <div class="stickers">
+        <span class="sticker sticker--lime" style="top:10%; left:8%;">glow up</span>
+        <span class="sticker sticker--yellow" style="bottom:10%; right:6%;">1TB of secrets</span>
+      </div>
+      <div class="page-copy">
+        <p class="log-tag">log 03 — reassigned</p>
+        <h2>demoted, not deleted</h2>
+        <p>Yanked off the motherboard and rehired as an external drive. A whole rebrand in a four-dollar enclosure. Certified glow-up.</p>
+        <button class="roast-btn" type="button" data-jokes="from main character to side quest, and it's thriving.|still holding every cringe photo from 2019. protect it.|the only &quot;ex&quot; that actually still works.">🔥 roast it</button>
+        <p class="roast-output" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- PAGE 4 : the crash, glitch treatment -->
+    <section class="page page--glitch" data-index="3">
+      <div class="polaroid polaroid--crash">
+        <img class="page-img" src="images/4.jpeg" alt="Blue recovery screen reading Your PC couldn't start properly, error code 0xc0000001">
+        <span class="tape tape--left"></span>
+        <span class="tape tape--right"></span>
+      </div>
+      <div class="stickers">
+        <span class="sticker sticker--pink sticker--glitch" style="top:14%; right:6%;">404 error</span>
+      </div>
+      <div class="page-copy">
+        <p class="log-tag log-tag--danger">log 04 — error 0xc0000001</p>
+        <h2>it's giving "boot file: missing"</h2>
+        <p>No warning, no mercy, just a blue screen and a very long evening. Confidence: also not found.</p>
+        <button class="roast-btn" type="button" data-jokes="the t-rex on the lid was NOT emotionally prepared for this.|this is the laptop equivalent of &quot;we need to talk.&quot;|0xc0000001 out of 10, would not recommend.">🔥 roast it</button>
+        <p class="roast-output" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- PAGE 5 -->
+    <section class="page" data-index="4">
+      <div class="polaroid">
+        <img class="page-img" src="images/5.jpeg" alt="The laptop screen lit up again showing a forest wallpaper, back up and running after recovery">
+        <span class="tape tape--left"></span>
+        <span class="tape tape--right"></span>
+      </div>
+      <div class="stickers">
+        <span class="sticker sticker--yellow" style="top:12%; left:7%;">new wallpaper who dis</span>
+      </div>
+      <div class="page-copy">
+        <p class="log-tag">log 05 — back online</p>
+        <h2>character development arc</h2>
+        <p>Rebooted, re-skinned, acting like nothing happened. Zero degrees of chill on the inside, brand new forest on the outside.</p>
+        <button class="roast-btn" type="button" data-jokes="recovery arc complete. no therapy, just a fresh wallpaper.|healed? no. redecorated? absolutely.|main character reset button: pressed.">🔥 roast it</button>
+        <p class="roast-output" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- PAGE 6 -->
+    <section class="page" data-index="5">
+      <div class="polaroid">
+        <img class="page-img" src="images/6.jpeg" alt="The closed laptop lid covered in programmer stickers, with headphones resting on top">
+        <span class="tape tape--left"></span>
+        <span class="tape tape--right"></span>
+      </div>
+      <div class="stickers">
+        <span class="sticker sticker--pink" style="top:10%; right:8%;">don't touch my laptop</span>
+        <span class="sticker sticker--lime" style="bottom:12%; left:6%;">too many brain tabs open</span>
+      </div>
+      <div class="page-copy">
+        <p class="log-tag">log 06 — personality patch</p>
+        <h2>peak personality hours</h2>
+        <p>404 Error. Don't Touch My Laptop. Too Many Brain Tabs Open. This laptop has more opinions than I do, and headphones on top like it's about to drop a diss track.</p>
+        <button class="roast-btn" type="button" data-jokes="more stickers than surface area. respect.|the &quot;hacker&quot; sticker is doing a lot of heavy lifting.|it's not cluttered, it's &quot;curated chaos.&quot;">🔥 roast it</button>
+        <p class="roast-output" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- OUTRO -->
+    <section class="page page-outro" data-index="6">
+      <div class="outro-copy">
+        <p class="pill pill--warn">log end</p>
+        <h2>thank u, next boot</h2>
+        <p>Six photos, one laptop, zero regrets (mostly). Crashed, cracked open, rebuilt, and still the one I reach for first.</p>
+        <button id="restart-btn" class="btn btn--main" type="button">
+          <span class="btn-key">⏎</span>
+          <span>roast it again</span>
+        </button>
+      </div>
+    </section>
+
+  </div>
+
+  <button id="prev-btn" class="nav-arrow nav-arrow--prev" type="button" aria-label="Previous">‹</button>
+  <button id="next-btn" class="nav-arrow nav-arrow--next" type="button" aria-label="Next">›</button>
+</main>
+
+<!-- background music: replace src with your own audio file -->
+<audio id="bg-audio" src="audio/theme.mp3" loop preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
