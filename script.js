@@ -27,7 +27,7 @@
   const emojiSet = ["💀", "🔥", "🫠", "💾", "⚡", "😭"];
 
   /* ---------- typewriter on boot screen ---------- */
-  const fullTitle = "My pc didn't just start. it survived.";
+  const fullTitle = "My pc didn't just start. it survive.";
   let twIndex = 0;
   function typeTick() {
     if (twIndex <= fullTitle.length) {
