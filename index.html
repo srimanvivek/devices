@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>THE LAPTOP ARCHIVE</title>
+
+    <meta
+        name="description"
+        content="A digital tribute to the machine that survived it all."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     LOADING / WELCOME
+===================================================== -->
+
+<div class="intro-screen" id="introScreen">
+
+    <div class="intro-noise"></div>
+
+    <div class="intro-top">
+        <span>DEVICE ARCHIVE</span>
+        <span>17 / 09 / 2026</span>
+    </div>
+
+    <div class="intro-center">
+
+        <div class="status-dot">
+            <span></span>
+            SYSTEM ONLINE
+        </div>
+
+        <h1>
+            THIS ONE<br>
+            <em>DESERVES</em><br>
+            A WEBSITE.
+        </h1>
+
+        <p>
+            A small digital tribute to the machine
+            that has somehow survived everything.
+        </p>
+
+        <button id="enterButton">
+            <span>ENTER THE ARCHIVE</span>
+            <b>↗</b>
+        </button>
+
+    </div>
+
+    <div class="intro-bottom">
+        <span>PLEASE DON'T TOUCH</span>
+        <span>001 / 001</span>
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     MUSIC
+===================================================== -->
+
+<audio id="music" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<nav class="navigation" id="navigation">
+
+    <div class="nav-logo">
+        <span class="live-dot"></span>
+        LAPTOP / 001
+    </div>
+
+    <div class="nav-progress">
+        <span id="pageNumber">01</span>
+        <div class="progress-track">
+            <div id="progressBar"></div>
+        </div>
+        <span>07</span>
+    </div>
+
+    <button class="music-button" id="musicButton">
+        <span class="music-bars">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+        <span id="musicLabel">ON</span>
+    </button>
+
+</nav>
+
+
+<!-- =====================================================
+     PAGE COUNTER / SIDE TEXT
+===================================================== -->
+
+<div class="side-label left-label">
+    <span>EST.</span>
+    <strong>THE JOURNEY</strong>
+</div>
+
+<div class="side-label right-label">
+    <span>SCROLL</span>
+    <strong>↓</strong>
+</div>
+
+
+<!-- =====================================================
+     MAIN EXPERIENCE
+===================================================== -->
+
+<main id="experience">
+
+
+<!-- =====================================================
+     PAGE 01 / THE DAILY GRIND
+===================================================== -->
+
+<section class="chapter chapter-one" data-page="01">
+
+    <div class="chapter-bg-number">01</div>
+
+    <div class="chapter-copy">
+
+        <span class="chapter-tag">CHAPTER 01 / DAILY GRIND</span>
+
+        <h2>
+            THE ONE<br>
+            THAT <span>SHOWED UP.</span>
+        </h2>
+
+        <p>
+            Classes. Coding. Projects. Research.
+            Random ideas at midnight.
+            Somehow this machine was always there.
+        </p>
+
+        <div class="mini-stats">
+            <div>
+                <strong>∞</strong>
+                <span>SESSIONS</span>
+            </div>
+
+            <div>
+                <strong>01</strong>
+                <span>LOYAL MACHINE</span>
+            </div>
+
+            <div>
+                <strong>0</strong>
+                <span>COMPLAINTS</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="hero-device">
+
+        <div class="photo-frame main-photo">
+            <img
+                src="images/1.jpeg"
+                alt="Laptop being used for studying"
+            >
+        </div>
+
+        <div class="photo-sticker sticker-study">
+            STUDY MODE<br>
+            <b>ON</b>
+        </div>
+
+        <div class="photo-sticker sticker-timer">
+            TIMER<br>
+            <b>RUNNING</b>
+        </div>
+
+    </div>
+
+    <div class="chapter-bottom">
+        <span>IT NEVER CALLED IN SICK.</span>
+        <span>01 / 07</span>
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PAGE 02 / INTERNALS
+===================================================== -->
+
+<section class="chapter chapter-two" data-page="02">
+
+    <div class="blueprint-grid"></div>
+
+    <div class="internals-image">
+        <img
+            src="images/2.jpeg"
+            alt="Laptop internals showing motherboard RAM battery and SSD"
+        >
+    </div>
+
+    <div class="internals-copy">
+
+        <span class="chapter-tag">CHAPTER 02 / UNDER THE HOOD</span>
+
+        <h2>
+            MEET THE<br>
+            <span>REAL TEAM.</span>
+        </h2>
+
+        <p>
+            Motherboard. RAM. SSDs. Battery.
+            A whole little ecosystem hiding beneath
+            the keyboard.
+        </p>
+
+        <div class="component-list">
+
+            <div>
+                <span>01</span>
+                <b>MOTHERBOARD</b>
+                <small>THE BRAIN</small>
+            </div>
+
+            <div>
+                <span>02</span>
+                <b>RAM</b>
+                <small>THE MULTITASKER</small>
+            </div>
+
+            <div>
+                <span>03</span>
+                <b>SSD</b>
+                <small>THE MEMORY KEEPER</small>
+            </div>
+
+            <div>
+                <span>04</span>
+                <b>BATTERY</b>
+                <small>THE SURVIVAL SUPPLY</small>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="tiny-warning">
+        WARRANTY VOID<br>
+        CURIOSITY WIN
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PAGE 03 / HDD SECOND LIFE
+===================================================== -->
+
+<section class="chapter chapter-three" data-page="03">
+
+    <div class="orbit-circle circle-one"></div>
+    <div class="orbit-circle circle-two"></div>
+
+    <div class="drive-copy">
+
+        <span class="chapter-tag">CHAPTER 03 / SECOND LIFE</span>
+
+        <div class="giant-text">
+            OLD<br>
+            <span>DRIVE.</span>
+        </div>
+
+        <div class="arrow-text">
+            ↓ NEW JOB
+        </div>
+
+        <p>
+            Once an internal hard disk.
+            Now an external drive.
+        </p>
+
+        <strong class="roast">
+            RETIREMENT WAS DENIED.
+        </strong>
+
+    </div>
+
+    <div class="drive-image">
+
+        <div class="drive-glow"></div>
+
+        <img
+            src="images/3.jpeg"
+            alt="Internal hard disk inside an external enclosure"
+        >
+
+        <div class="drive-label">
+            HDD-01<br>
+            <span>REASSIGNED</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PAGE 04 / ERROR ERA
+===================================================== -->
+
+<section class="chapter chapter-four" data-page="04">
+
+    <div class="error-background">
+        <span>ERROR</span>
+        <span>ERROR</span>
+        <span>ERROR</span>
+        <span>ERROR</span>
+    </div>
+
+    <div class="error-top">
+        <span>CRITICAL EVENT</span>
+        <span>ARCHIVE 04</span>
+    </div>
+
+    <div class="error-center">
+
+        <div class="error-code">
+            ERROR<br>
+            <strong>404</strong>
+        </div>
+
+        <h2>
+            THE<br>
+            <span>DARK ERA.</span>
+        </h2>
+
+        <p>
+            Things went wrong.
+            Files disappeared.
+            Error messages appeared.
+            Patience disappeared shortly after.
+        </p>
+
+        <div class="error-status">
+            <span>DEVICE STATUS</span>
+            <strong>NOT GIVING UP</strong>
+        </div>
+
+    </div>
+
+    <div class="error-photo">
+
+        <div class="glitch-line"></div>
+
+        <img
+            src="images/4.jpeg"
+            alt="Laptop displaying errors"
+        >
+
+        <div class="error-caption">
+            <span>DOCUMENTED EVIDENCE</span>
+            <b>IT SURVIVED.</b>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PAGE 05 / COMEBACK
+===================================================== -->
+
+<section class="chapter chapter-five" data-page="05">
+
+    <div class="comeback-sun"></div>
+
+    <div class="comeback-copy">
+
+        <span class="chapter-tag">CHAPTER 05 / COMEBACK</span>
+
+        <h2>
+            STILL<br>
+            <em>HERE.</em>
+        </h2>
+
+        <p>
+            After the errors.
+            After the panic.
+            After all of it.
+        </p>
+
+        <div class="typing-line">
+            <span id="typingText"></span><span class="cursor">_</span>
+        </div>
+
+    </div>
+
+    <div class="comeback-image">
+
+        <img
+            src="images/5.jpeg"
+            alt="Laptop working normally with Dino sticker"
+        >
+
+        <div class="dino-label">
+            🦖<br>
+            SURVIVOR
+        </div>
+
+    </div>
+
+    <div class="comeback-stamp">
+        <span>RECOVERED</span>
+        <strong>100%</strong>
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PAGE 06 / HOME BASE
+===================================================== -->
+
+<section class="chapter chapter-six" data-page="06">
+
+    <div class="home-copy">
+
+        <span class="chapter-tag">CHAPTER 06 / HOME BASE</span>
+
+        <h2>
+            THIS IS<br>
+            <span>THE DESK.</span>
+        </h2>
+
+        <p>
+            Laptop. Headphones. Stickers.
+            Ideas everywhere.
+            This is where most of the chaos begins.
+        </p>
+
+        <div class="do-not-touch">
+            <span>OFFICIAL NOTICE</span>
+            <strong>DON'T TOUCH<br>MY LAPTOP.</strong>
+        </div>
+
+    </div>
+
+    <div class="home-image">
+
+        <img
+            src="images/6.jpeg"
+            alt="Laptop and headphones on a desk"
+        >
+
+        <div class="sticker-note note-one">
+            DO NOT TOUCH
+        </div>
+
+        <div class="sticker-note note-two">
+            WORK<br>
+            IN PROGRESS
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PAGE 07 / FINAL TRIBUTE
+===================================================== -->
+
+<section class="chapter final-page" data-page="07">
+
+    <div class="final-noise"></div>
+
+    <div class="final-content">
+
+        <span class="chapter-tag">CHAPTER 07 / THE TRIBUTE</span>
+
+        <div class="final-heading">
+            <h2>
+                NOT JUST<br>
+                A <em>LAPTOP.</em>
+            </h2>
+        </div>
+
+        <p class="final-message">
+            To every component that powered an idea,
+            every drive that stored a memory,
+            every screen that stayed awake,
+            and every device that quietly became
+            part of the journey...
+        </p>
+
+        <div class="final-thanks">
+            <span>THANK YOU FOR</span>
+            <strong>STAYING.</strong>
+        </div>
+
+        <div class="final-meta">
+            <span>DEVICE ARCHIVE / 001</span>
+            <span>STILL RUNNING.</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =====================================================
+     MOBILE BOTTOM NAV
+===================================================== -->
+
+<div class="mobile-nav" id="mobileNav">
+
+    <button id="previousButton">←</button>
+
+    <div>
+        <span id="mobilePage">01</span>
+        <small>/ 07</small>
+    </div>
+
+    <button id="nextButton">→</button>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
